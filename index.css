@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family:  'Roboto', sans-serif;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+}
+
+.header{
+    padding: 1rem 7%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgb(188, 233, 237);
+}
+
+.logo img{
+    width: 60px;
+    float: left;
+}
+
+h3{
+    font-size: 2rem;
+    color: black;
+    font-weight: bolder;
+    font-family: sans-serif;
+    white-space: nowrap;
+    margin-top:20px;
+}
+
+
+.navbar a{
+    color:black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+.navbar a:hover{
+    color: orange;
+}
+
+.icons div{
+    color: black;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    display: none;
+}
+
+.icons div:hover{
+    cursor: pointer;
+}
+
+.icons a{
+    color: black;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid orangered;
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 18px;
+    transition:0.5s;
+    display: inline-block;
+}
+
+.icons a:hover{
+    transform: scale(1.1);
+    background-color: orangered;
+    border: 1px solid white;
+}
+
+.navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+
+
+@media (max-width:767px){
+    .header{
+        padding:2rem;
+    }
+    .icons div{
+        display: initial;
+    }
+
+    .navbar{
+        position: absolute;
+        width: 100%;
+        height:100vh;
+        left: 0;
+        top: 100%;
+        background-color: orange;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navbar a{
+        display: block;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
