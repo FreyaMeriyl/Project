@@ -15,7 +15,7 @@ html{
 }
 
 .header{
-    padding: 1rem 7%;
+    padding: 0.5rem 5%;
     position: absolute;
     left: 0;
     right: 0;
@@ -75,6 +75,7 @@ h3{
     font-size: 18px;
     transition:0.5s;
     display: inline-block;
+    text-decoration: none;
 }
 
 .icons a:hover{
@@ -156,6 +157,7 @@ h3{
     font-size: 18px;
     transition:0.5s;
     display: inline-block;
+    text-decoration: none;
 }
 
 .home-text-content a:hover{
@@ -217,9 +219,115 @@ h3{
 
 
 
+/*Why Choose Us section*/
+.wcu{
+    padding: 1rem 7%;
+}
+
+.main-wcu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.wcu-content{
+    flex:1 1 45rem;
+}
+
+.wcu-inner-content{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.wcu-inner-content img{
+    width: 40%;
+    margin-left: 800px;
+}
+
+.wcu-text-content{
+    padding: 0 4rem;
+    margin-left: -90px;
+    margin-top: -520px;
+    margin-right: 350px;
+    text-align: justify;
+}
+
+.wcu-text-content h1{
+    color: orangered;
+    font-size: 40px;
+}
+
+.wcu-text-content p{
+    font-size: 1.5rem;
+    line-height: 35px;
+}
+
+.wcu-text-content li{
+    font-size: 1.5rem;
+    line-height: 35px;
+}
 
 
 
+/*Contact Section*/
+.contact {
+    padding: 5rem 7%;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-content h1 {
+    color: orangered;
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+
+.contact-content p {
+    color: black;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.contact-content form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contact-content form input,
+.contact-content form textarea {
+    flex: 1 1 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-content form button {
+    flex: 1 1 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.contact-content form button:hover {
+    background-color: orangered;
+}
 
 
 
@@ -247,7 +355,7 @@ h3{
     .navbar{
         position: absolute;
         width: 100%;
-        height:100vh;
+        height:220px;
         left: 0;
         top: 100%;
         background-color: skyblue;
@@ -284,6 +392,19 @@ h3{
         margin-left: -9px;
         margin-top: -30px;
         margin-right: 0px;
+        text-align: justify;
+    }
+
+    .wcu-inner-content img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    .wcu-text-content{
+        padding: 0 4rem;
+        margin-left: -50px;
+        margin-top: -10px;
+        margin-right: -60px;
         text-align: justify;
     }
 }
