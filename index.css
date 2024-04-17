@@ -11,6 +11,7 @@
 html{
     font-size: 65%;
     scroll-behavior: smooth;
+    background-color: rgb(188, 233, 237);
 }
 
 .header{
@@ -31,12 +32,13 @@ html{
 }
 
 h3{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: black;
     font-weight: bolder;
     font-family: sans-serif;
     white-space: nowrap;
     margin-top:20px;
+    
 }
 
 
@@ -50,7 +52,7 @@ h3{
 }
 
 .navbar a:hover{
-    color: orange;
+    color: orangered;
 }
 
 .icons div{
@@ -85,6 +87,151 @@ h3{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+.gradient{
+    height: 100%;
+    width: 50%;
+    background-image:linear-gradient(to left, white, transparent);
+    position: absolute;
+    top:0;
+    right:0;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+/*Home Section*/
+.home{
+    padding: 1rem 7%;
+    background: url(images/cover.png);
+    min-height: 100vh;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.main-home{
+    display:  flex;
+    justify-content: right;
+    align-items: right;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 100px;
+}
+
+.home-inner-content{
+    flex:1 1 45rem;
+}
+
+
+.home-text-content{
+    position: relative;
+    margin-top: 180px;
+    padding: 0 10rem;
+}
+
+.home-text-content h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.home-text-content p{
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.home-text-content a{
+    color: black;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid orangered;
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 18px;
+    transition:0.5s;
+    display: inline-block;
+}
+
+.home-text-content a:hover{
+    transform: scale(1.1);
+    background-color: orangered;
+    border: 1px solid white;
+}
+
+
+
+
+/*About section*/
+.about{
+    padding: 1rem 7%;
+}
+
+.main-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-content{
+    flex:1 1 45rem;
+}
+
+.about-inner-content{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.about-inner-content img{
+    width: 30%;
+    margin-left: 0px;
+}
+
+.about-text-content{
+    padding: 0 4rem;
+    margin-left: 400px;
+    margin-top: -440px;
+    margin-right: -90px;
+    text-align: justify;
+}
+
+.about-text-content h1{
+    color: orangered;
+    font-size: 40px;
+}
+
+.about-text-content p{
+    font-size: 1.5rem;
+    line-height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -103,7 +250,7 @@ h3{
         height:100vh;
         left: 0;
         top: 100%;
-        background-color: orange;
+        background-color: skyblue;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
@@ -112,6 +259,32 @@ h3{
         text-align: center;
         margin: 1rem;
         padding: 1rem;
+    }
+
+    .home-text-content{
+        padding: 0 2rem;
+    }
+
+    .main-home{
+        padding: 2rem 0;
+    }
+
+    .home{
+        padding-top:100px;
+    }
+
+    .about-content .about-inner-content img{
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .about-text-content{
+        padding: 0 4rem;
+        margin-left: -9px;
+        margin-top: -30px;
+        margin-right: 0px;
+        text-align: justify;
     }
 }
 
