@@ -1,8 +1,7 @@
-let menubar = document .querySelector('#menu-bar')
-let nav = document .querySelector('.navbar')
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-menubar .onclick=()=>{
-  menubar.classList.toggle('fa-times')
-  nav.classList.toggle('active')
-
-}
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})

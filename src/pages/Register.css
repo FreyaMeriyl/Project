@@ -1,0 +1,85 @@
+body {
+    background-color:rgb(188, 233, 237) ;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(135, 225, 234);
+    border-radius: 10px;
+  }
+
+form {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    border: none;
+    background-color: orange;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+
+  button:hover{
+    background-color: orangered;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+  }
+
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: black;
+  }
+
+  h3 {
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 1px;
+  }
+
+  .submit {
+    margin-top: 20px;
+    color: black;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid orangered;
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 18px;
+    transition:0.5s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.submit:hover{
+    transform: scale(1.1);
+    text-decoration: none;
+    background-color: orangered;
+    border: 1px solid white;
+    color: white;
+}
